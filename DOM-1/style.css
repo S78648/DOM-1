@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    width:100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+#card{
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+#card img{
+    border-radius: 10px;
+    width:100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+#card h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+#card h5{
+    font-size: 25px;
+    color: red;
+     margin: 20px;
+}
+#card button{
+    background-color: cadetblue;
+    color: #fff;
+    font-weight: 700;
+    padding: 12PX 20PX;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#container{
+    border-radius: 10px;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+#container img{
+    border-radius: 10px;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#container i{
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+#cursor{
+    width:20px;
+    aspect-ratio: 1/1;
+    mix-blend-mode: difference;
+    background-color: rgb(4, 75, 133);
+    border-radius: 50%;
+    position: absolute;
+    /* transition: all linear 0.1s; */
+}
+
